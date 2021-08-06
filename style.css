@@ -54,7 +54,8 @@
 form button{
     cursor: pointer;
     position: absolute;
-    top: 49%;
+    top: 52%;
+    z-index: 1;
     left: 48%;
     background: transparent;
     width: 80px;
@@ -74,6 +75,9 @@ form button{
     width: 100%;
     top: 55%;
     height: 50%;
+}
+.down2{
+    display: none;
 }
 
 @media only screen and (max-width: 767px){
@@ -98,7 +102,11 @@ form button{
     left: 23%;
 }
 .footer .down{
+    display: none;
+}
+.footer .down2{
     position: absolute;
+    display: flex;
     background: transparent;
     width: 100%;
     top: 60%;
@@ -125,10 +133,14 @@ form button{
     top: 38%;
     left: 20%;
 }
+form{
+    padding: 10px;
+}
 form button{
     cursor: pointer;
     position: absolute;
-    top: 85%;
+    z-index: 1;
+    top: 89%;
     left: 75%;
     background: transparent;
     width: 60px;
