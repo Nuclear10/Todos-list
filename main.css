@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins' , sans-serif;
+}
+.header{
+    background-color: hsl(0, 74%, 74%);
+    height: 90vh;
+}
+h2{
+    padding: 50px 20px;
+    color: white;
+}
+.mid{
+    border-radius: 9% 9% 0% 0%;
+    height: 74vh;
+    background-color: hsl(0, 84%, 87%);
+}
+.footer{
+    height: 10vh;
+    background-color: black;
+}
+#home{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+#list{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+    bottom: 28px;
+}
+#add{
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    background-color: hsl(0, 74%, 74%);
+    position: absolute;
+    font-size: 25px;
+    left: 163px;
+    border: 2px solid hsl(0, 74%, 74%);
+    border-width: 20px;
+    border-radius: 15%;
+    bottom: 30px;
+}
+#settings{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 260px;
+    bottom: 26px;
+}
+#user{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 325px;
+    bottom: 29px;
+}
