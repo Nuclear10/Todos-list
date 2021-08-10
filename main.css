@@ -4,6 +4,90 @@
     padding: 0;
     font-family: 'Poppins' , sans-serif;
 }
+
+section#sidebar {
+    width: 5%;
+    background-color: rgb(31, 30, 30);
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    height: 100%;
+}
+
+.sidebar-brand {
+    padding: 50px 40px;
+}
+
+.sidebar-menu ul li a {
+    display: block;
+    padding: 10px 40px;
+    color: #fff;
+}
+
+.sidebar-menu ul li span {
+    padding: 10px;
+}
+
+.header{
+    background-color: hsl(0, 74%, 74%);
+    height: 90vh;
+}
+h2{
+    padding: 50px 860px;
+    font-size: 35px;
+    color: white;
+}
+.mid{
+    border-radius: 16% 9% 0% 0%;
+    height: 84.2vh;
+    background-color: hsl(0, 84%, 87%);
+}
+#home{
+    font-size: 35px;
+    color: white;
+    padding: 30px 0;
+}
+#list{
+    font-size: 35px;
+    color: white;
+    padding: 30px 0;
+}
+.footer1 #add{
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    background-color: rgb(31, 30, 30);
+    position: absolute;
+    font-size: 30px;
+    right: 2%;
+    border: 2px solid rgb(31, 30, 30);
+    border-width: 30px;
+    border-radius: 100%;
+    bottom: 20px;
+}
+#settings{
+    font-size: 35px;
+    color: white;
+    padding: 30px 0;
+}
+#user{
+    font-size: 35px;
+    color: white;
+    padding: 30px 0;
+}
+.footer{
+    display: none;
+}
+@media only screen and (max-width: 767px){ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+#sidebar{
+    display: none;
+}
 .header{
     background-color: hsl(0, 74%, 74%);
     height: 90vh;
@@ -18,26 +102,31 @@ h2{
     background-color: hsl(0, 84%, 87%);
 }
 .footer{
+    display: block;
+    overflow: hidden;
     height: 10vh;
-    background-color: black;
+    background-color: rgb(31, 30, 30);
 }
-#home{
+.footer1{
+    display: none;
+}
+.footer #home{
     font-size: 25px;
     color: white;
     cursor: pointer;
     position: absolute;
     left: 20px;
-    bottom: 30px;
+    bottom: 2px;
 }
-#list{
+.footer #list{
     font-size: 25px;
     color: white;
     cursor: pointer;
     position: absolute;
     left: 100px;
-    bottom: 28px;
+    bottom: 2px;
 }
-#add{
+.footer #add{
     color: white;
     background: transparent;
     cursor: pointer;
@@ -50,19 +139,20 @@ h2{
     border-radius: 15%;
     bottom: 30px;
 }
-#settings{
+.footer #settings{
     font-size: 30px;
     color: white;
     cursor: pointer;
     position: absolute;
     left: 260px;
-    bottom: 26px;
+    bottom: 2px;
 }
-#user{
+.footer #user{
     font-size: 25px;
     color: white;
     cursor: pointer;
     position: absolute;
     left: 325px;
-    bottom: 29px;
+    bottom: 2px;
+}
 }
