@@ -5,30 +5,6 @@
     font-family: 'Poppins' , sans-serif;
 }
 
-section#sidebar {
-    width: 5%;
-    background-color: rgb(31, 30, 30);
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: #fff;
-    height: 100%;
-}
-
-.sidebar-brand {
-    padding: 50px 40px;
-}
-
-.sidebar-menu ul li a {
-    display: block;
-    padding: 10px 40px;
-    color: #fff;
-}
-
-.sidebar-menu ul li span {
-    padding: 10px;
-}
-
 .header{
     background-color: hsl(0, 74%, 74%);
     height: 90vh;
@@ -43,42 +19,6 @@ h2{
     height: 84.2vh;
     background-color: hsl(0, 84%, 87%);
 }
-#home{
-    font-size: 35px;
-    color: white;
-    padding: 30px 0;
-}
-#list{
-    font-size: 35px;
-    color: white;
-    padding: 30px 0;
-}
-.footer1 #add{
-    color: white;
-    background: transparent;
-    cursor: pointer;
-    background-color: rgb(31, 30, 30);
-    position: absolute;
-    font-size: 30px;
-    right: 2%;
-    border: 2px solid rgb(31, 30, 30);
-    border-width: 30px;
-    border-radius: 100%;
-    bottom: 20px;
-}
-#settings{
-    font-size: 35px;
-    color: white;
-    padding: 30px 0;
-}
-#user{
-    font-size: 35px;
-    color: white;
-    padding: 30px 0;
-}
-.footer{
-    display: none;
-}
 .cardHolder{
     background-color: #fce3e2;
     height: 75vh;
@@ -86,7 +26,7 @@ h2{
     border-top-right-radius: 30px;
     overflow-y: scroll;
     border: 10px solid #fce3e2;
-    padding: 5px 20px 0px 90px;
+    padding: 5px 20px 0px 10px;
 }
 .cards{
     background-color: white;
@@ -97,20 +37,48 @@ h2{
     justify-content: space-between;
     box-shadow: 5px 5px 11px 0 ;
 }
-.card1{
+.card1 , .card2{
     display: block;
 }
-.header1{
+.header1 , .header2{
     display: flex;
     align-items: baseline;
 }
-.titlecard1{
+.titlecard1 , .titlecard2{
     margin: 0;
     font-size: 22px;
     color: #35333d;
 }
 .blue{
     background-color: #2c82e6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.green{
+    background-color: #08c908;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.yellow{
+    background-color: #ff0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.red{
+    background-color: #ff0000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.orange{
+    background-color: #FFA500;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -135,11 +103,8 @@ h2{
     align-items: center;
 }
 #edit1{
-    cursor: pointer;
-    position: absolute;
-    left: 1825px;
+    width: 20px;
     font-size: 20px;
-    width: 15px;
     height: 15px;
 }
 .delete{
@@ -150,15 +115,63 @@ h2{
     margin-top: 50px;
     box-shadow: 3px 4px 11px 0;
 }
+.footer{
+    display: block;
+    overflow: hidden;
+    height: 10vh;
+    background-color: rgb(31, 30, 30);
+}
+.footer #home{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 220px;
+    bottom: 20px;
+}
+.footer #list{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 620px;
+    bottom: 20px;
+}
+.footer #add{
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    background-color: hsl(0, 74%, 74%);
+    position: absolute;
+    font-size: 25px;
+    left: 920px;
+    border: 9px solid hsl(0, 74%, 74%);
+    border-width: 20px;
+    border-radius: 15%;
+    bottom: 15px;
+}
+.footer #settings{
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 1260px;
+    bottom: 20px;
+}
+.footer #user{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 1625px;
+    bottom: 20px;
+}
 
 @media only screen and (max-width: 768px){ 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins' , sans-serif;
-}
-#sidebar{
-    display: none;
 }
 .header{
     background-color: hsl(0, 74%, 74%);
@@ -179,16 +192,13 @@ h2{
     height: 10vh;
     background-color: rgb(31, 30, 30);
 }
-.footer1{
-    display: none;
-}
 .footer #home{
     font-size: 25px;
     color: white;
     cursor: pointer;
     position: absolute;
     left: 20px;
-    bottom: 2px;
+    bottom: 20px;
 }
 .footer #list{
     font-size: 25px;
@@ -196,7 +206,7 @@ h2{
     cursor: pointer;
     position: absolute;
     left: 100px;
-    bottom: 2px;
+    bottom: 20px;
 }
 .footer #add{
     color: white;
@@ -209,7 +219,7 @@ h2{
     border: 2px solid hsl(0, 74%, 74%);
     border-width: 20px;
     border-radius: 15%;
-    bottom: 30px;
+    bottom: 20px;
 }
 .footer #settings{
     font-size: 30px;
@@ -217,7 +227,7 @@ h2{
     cursor: pointer;
     position: absolute;
     left: 260px;
-    bottom: 2px;
+    bottom: 18px;
 }
 .footer #user{
     font-size: 25px;
@@ -225,6 +235,103 @@ h2{
     cursor: pointer;
     position: absolute;
     left: 325px;
-    bottom: 2px;
+    bottom: 20px;
 }
+.cardHolder{
+    background-color: #fce3e2;
+    height: 55vh;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow-y: scroll;
+    border: 5px solid #fce3e2;
+    padding: 5px 20px 130px 10px;
+}
+.cards{
+    background-color: white;
+    border-radius: 17px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 11px 0 ;
+}
+.card1 , .card2{
+    display: block;
+}
+.header1 , .header2{
+    display: flex;
+    align-items: baseline;
+}
+.titlecard1 , .titlecard2{
+    margin: 0;
+    font-size: 22px;
+    color: #35333d;
+}
+.blue{
+    background-color: #2c82e6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.green{
+    background-color: #08c908;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.yellow{
+    background-color: #ff0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.red{
+    background-color: #ff0000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.orange{
+    background-color: #FFA500;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.titletime1{
+    color: #d3d3d3;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+.cardTask{
+    margin: 0;
+    color: hsla(0, 0%, 50.2%, .616);
+    font-size: 14px;
+    font-weight: 500;
+}
+.actionButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#edit1{
+    width: 20px;
+    font-size: 20px;
+    height: 15px;
+}
+.delete{
+    cursor: pointer;
+    background: #ff9e9b;
+    padding: 9px 12px;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-shadow: 3px 4px 11px 0;
+}
+
 }
