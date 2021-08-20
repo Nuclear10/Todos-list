@@ -166,12 +166,16 @@ h2{
     left: 1625px;
     bottom: 20px;
 }
+a:link, a:visited, a:active{
+    color: black;
+}
 
 @media only screen and (max-width: 768px){ 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins' , sans-serif;
+    overflow: hidden;
 }
 .header{
     background-color: hsl(0, 74%, 74%);
@@ -332,6 +336,9 @@ h2{
     border-radius: 5px;
     margin-top: 50px;
     box-shadow: 3px 4px 11px 0;
+}
+a:link, a:visited, a:active{
+    color: black;
 }
 
 }
