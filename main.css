@@ -102,6 +102,10 @@ h2{
     justify-content: space-between;
     align-items: center;
 }
+button{
+    border: none;
+    background: transparent;
+}
 #edit1{
     width: 20px;
     font-size: 20px;
